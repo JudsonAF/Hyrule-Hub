@@ -48,10 +48,10 @@ a {
   position: relative;
   margin: auto;
   box-sizing: border-box;
-  box-shadow: 10px 10px 100px #a42529;
+  box-shadow: 0 -4em 100px #a42529;
   border-radius: 5%;
-  background-size: contain;
-  overflow: hidden;
+  /* background-size: contain; */
+  /* overflow: hidden; */
   /* border-style: solid;
   border-color: #a42529;
   border-width: 7px; */
@@ -62,9 +62,9 @@ a {
     display: none;
     max-width: 100%;
     max-height: 100%;
-    margin: 0 auto;
-    border-radius: 5%;
-    overflow: hidden;
+    /* margin: 0 auto; */
+    /* border-radius: 5%; */
+    /* overflow: hidden; */
 }
 
 .images {
@@ -229,16 +229,6 @@ a:hover {
   background: green;
 }
 
-/* #allContainer{
-  width: 610px;
-  height: 485px;
-  display: block;
-  position: relative;
-  top: 50%;
-  margin: 0 auto;
-  border: solid;
-} */
-
 #dotContainer {
   margin: 0 auto;
   /* display: inline-block; */
@@ -254,30 +244,15 @@ a:hover {
 }
 
 .col {
-  display: inline-block;
-  text-align: center;
-  width: 50%;
-  margin-right: -4px;
-  vertical-align: top;
-  padding-left: 1em;
-  padding-right: 1em;
-  color: red;
+  color: black;
 }
-
-
-/* #imageContainer {
-width: -50%;
-margin: 10px 10px;
-height: auto;
-position: relative;
-} */
 
 .wrapper {
   display: block;
   position: relative;
   margin: 5em;
   text-align: center;
-  color: #a42529;
+  color: black;
   /* margin: 10px 15px;
   padding: 150px; */
 }
@@ -314,6 +289,16 @@ Media Queries
 /* is supposed to stick footer to bottom of page and keep page viewable in one window */
 
 @media (min-width: 769px) {
+  .col {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: black;
+    }
   }
 
   @-webkit-keyframes fade {
