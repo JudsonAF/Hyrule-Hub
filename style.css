@@ -15,10 +15,6 @@ body {
   margin: 0 auto;
   font-family: 'Hylian', serif;
   background-size: cover;
-  /* position: fixed; */
-  /* top: 0;
-  left: 0; */
-
   /* Preserve aspet ratio */
   min-width: 100%;
   min-height: 100%;
@@ -43,33 +39,40 @@ a {
   text-align: center;
   margin: 0 auto;
   padding: 0;
-
 }
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1500px;
+  max-width: 70%;
+  max-height: 70%;
   position: relative;
   margin: auto;
-  width: 610px;
-  height: 485px;
-  /* padding: 10px 10px; */
+  box-sizing: border-box;
+  box-shadow: 10px 10px 100px #a42529;
+  border-radius: 5%;
+  background-size: contain;
+  overflow: hidden;
+  /* border-style: solid;
+  border-color: #a42529;
+  border-width: 7px; */
 }
 
-/* Hide the images by default */
+/* Hides all but one image by default */
 .mySlides {
     display: none;
-    /* width: 610px;
-    height: 485px; */
+    max-width: 100%;
+    max-height: 100%;
     margin: 0 auto;
-
+    border-radius: 5%;
+    overflow: hidden;
 }
 
 .images {
-  /* width: 1500px;
-  height: 500px; */
-  width: 610px;
-  height: 485px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5%;
+  background-size: contain;
+  /* overflow: hidden; */
 }
 
 /* Next & previous buttons */
@@ -242,13 +245,12 @@ a:hover {
 }
 
 #content {
-  /* padding-left: 1em;
-  padding-right: 1em; */
-  display: block;
-  width: 100%;
-  /* clear: both; */
-  margin: 5em 0;
-
+  display: inline-block;
+  max-width: 100%;
+  /* margin: 0; */
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
 }
 
 .col {
@@ -276,8 +278,8 @@ position: relative;
   margin: 5em;
   text-align: center;
   color: #a42529;
-  margin: 10px 15px;
-  padding: 150px;
+  /* margin: 10px 15px;
+  padding: 150px; */
 }
 
 .main-footer {
